@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  background: rgb(51, 57, 70);
+  color: wheat
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter {
+  margin-bottom: 15px;
+}
+
+.filter input {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 200px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter input:focus {
+  border-color: #007bff;
+}
+
+.filter input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.New {
+  padding-bottom: 20px;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 200px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+form button {
+  font-size: 16px;
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: green;
+  color: wheat;
+}
+
+
+
