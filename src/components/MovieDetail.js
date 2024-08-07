@@ -20,10 +20,10 @@ const MovieDetail = ({ movies }) => {
           <div className="trailer">
           <iframe width="560" height="315" src={movie.trailerURL} title={movie.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <button onClick={goBack}>Back to Home</button>
+          <button onClick={goBack}> Back </button>
         </>
       ) : (
-        <p>Movie not found</p>
+        <p>No Movie Found</p>
       )}
     </div>
   );

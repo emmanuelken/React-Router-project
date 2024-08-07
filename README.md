@@ -68,3 +68,55 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# REACT DEBUGGING DOCUMENTED
+
+# Debugging Process Documentation for this Movie App
+
+## Overview
+
+This README outlines the debugging process and solutions for this React Movie App.
+
+## Setup Instructions
+
+1. **Clone or Download the Project**
+   - Clone or download the repository containing the React application.
+
+2. **Install Dependencies**
+   - Run `npm install` to install all necessary dependencies.
+
+3. **Start the Development Server**
+   - Use `npm start` to launch the application.
+
+## Debugging Process
+
+### 1. Inspecting the Component
+
+- Open the React Developer Tools in your browser.
+- Navigate to the "Components" tab to view the components.
+- Verify that props and state values are as expected.
+
+### 2. Identified Issues
+
+#### Issue 1: Incorrect Movie Data
+
+- **Issue:** The movie details are not displayed correctly, or when the movie is not found.
+- **Diagnosis:** The `movie` object might be `undefined` or incorrect if the `title` from the URL does not match any movie in the `movies` array.
+
+#### Issue 2: Video Embedding Problems
+
+- **Issue:** The video iframe may not render properly or have incorrect attributes.
+- **Diagnosis:** Ensure that the `trailerURL` in `MovieDetail.js` is a valid URL and that iframe attributes are correctly set.
+
+
+### 3. Solutions Implemented
+
+#### Solution 1: Handling Movie Data
+
+- **Fix:** Added a check to handle cases where the `movie` object might be `undefined`. Ensured that the movie is correctly found using the `title` parameter.
+  ```jsx
+  const movie = movies.find(m => m.title === title);
+
+
+
